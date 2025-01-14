@@ -31,10 +31,10 @@ include '.includes/toast_notification.php';
 <!-- Mengambil data kategori dari database -->
 <?php
 $index = 1;
-$query = "SELECT * FROM categories";
+$query = "SELECT * FROM category";
 $exec = mysqli_query($conn, $query); // Pastikan $conn sudah didefinisikan (koneksi database)
 
-while ($category = mysqli_fetch_assoc($exec)): // Loop untuk setiap kategori
+while ($category = mysqli_fetch_assoc($exec)): 
 ?>
     <tr>
         <!-- menampilkan nomor kategori, dan opsi -->
