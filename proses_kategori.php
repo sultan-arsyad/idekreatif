@@ -11,7 +11,7 @@ if (isset($_POST['simpan'])) {
     $category_name = $_POST['category_name'];
 
     // Query untuk menambahkan data kategori ke dalam database
-    $query = "INSERT INTO categories (category_name) VALUES ('$category_name')";
+    $query = "INSERT INTO category(category_name) VALUES ('$category_name')";
     $exec = mysqli_query($conn, $query);
 
     // Menyimpan notifikasi berhasil atau gagal ke dalam session
