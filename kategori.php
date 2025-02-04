@@ -105,7 +105,7 @@ while ($category = mysqli_fetch_assoc($exec)):
                 </form>
             </div>
         </div>
-    </div>
+    </div>    
 </div>
 
 <?php endwhile; ?>

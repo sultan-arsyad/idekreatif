@@ -5,6 +5,11 @@ $notification = $_SESSION['notification'] ?? null;
 if ($notification){
   unset($_SESSION['notification']);
 }
+//ambil notif jika ada, kemudian hapus dari sesi
+$notification = $_SESSION['notification']?? null;
+if ($notification){
+  unset($_SESSION['notification']);
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
