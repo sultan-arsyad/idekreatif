@@ -60,7 +60,7 @@ if ($result->num_rows > 0) {
                                 <option value="" selected disabled>Select one</option>
                                 <?php
                                 // Mengambil data kategori dari database
-                                $queryCategories = "SELECT * FROM categories";
+                                $queryCategories = "SELECT * FROM category";
                                 $resultCategories = $conn->query($queryCategories);
 
                                 // Menambahkan opsi ke dropdown
