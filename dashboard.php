@@ -32,7 +32,7 @@ include ".includes/toast_notification.php";
                             <!-- Menampilkan data dari tabel database -->
                             <?php
                             $index = 1; // Variabel untuk nomor urut
-                            // Query untuk mengambil data dari tabel posts, users, dan categories
+                            // Query untuk mengambil data dari tabel posts, users, dan category
                             $query = "SELECT posts.*, users.name as user_name, category.category_name 
                                       FROM posts 
                                       INNER JOIN users ON posts.user_id = users.user_id 
@@ -71,7 +71,7 @@ include ".includes/toast_notification.php";
                                 </tr>
 
                                 <!-- Modal untuk Hapus Konten Blog -->
-                                <div class="modal fade" id="deletePost_<?= $post['id_post']; ?>" tabindex="-1" aria-hidden="true">
+                     <div class="modal fade" id="deletePost_<?= $post['id_post']; ?>" tabindex="-1" aria-hidden="true">
                                     <div class="modal-dialog" role="document">
                                         <div class="modal-content">
                                             <div class="modal-header">
